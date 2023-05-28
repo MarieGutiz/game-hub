@@ -12,7 +12,6 @@ const useData = <T>(endPoint: string , requestConfig?: AxiosRequestConfig, dps?:
     const [data, setData] = useState<T[]>([]);
     const [errors, setError] = useState("");
     const [isLoading, setLoading] = useState(false);
-    console.log("request confic ", requestConfig)
   
     useEffect(() => {
      const controller = new AbortController();
