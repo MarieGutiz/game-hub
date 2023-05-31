@@ -25,3 +25,4 @@ dist-ssr
 
 src/services/api-client.ts
 .gitignore
+.vercel
