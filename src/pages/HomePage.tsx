@@ -4,6 +4,7 @@ import GameHeading from "../components/GameHeading";
 import GenreList from "../components/GenreList";
 import PlatformSelector from "../components/PlatformSelector";
 import SortSelector from "../components/SortSelector";
+import GenresSmallDisplay from "../components/GenresSmallDisplay";
 
 const HomePage = () => {
   return (
@@ -26,7 +27,12 @@ const HomePage = () => {
         <Box paddingLeft={10}>
           <GameHeading />
           <Flex>
-            <Box marginRight={5}>
+            <Box marginRight={1}>
+              <Show below="lg">
+                <GenresSmallDisplay />
+              </Show>
+            </Box>
+            <Box marginRight={1}>
               <PlatformSelector />
             </Box>
             <SortSelector />

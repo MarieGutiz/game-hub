@@ -13,6 +13,7 @@ const SortSelector = () => {
   ];
 
   const sortOrder = useGameQueryStore((g) => g.gameQuery.sortOrder);
+  
   const currentSortOrder = sortOrders.find((o) => o.value === sortOrder);
 
   const setSortOrder = useGameQueryStore((o) => o.setSortOrder);
